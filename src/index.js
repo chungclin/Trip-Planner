@@ -10,12 +10,12 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
 
-const marker = buildMarker("activity", [-74.009151, 40.705086]); // or [-87.6354, 41.8885]
+const marker = buildMarker("activities", [-74.009151, 40.705086]); // or [-87.6354, 41.8885]
 marker.addTo(map);
 const restaurantsMarker = buildMarker("restaurants", [-87.6354, 41.8885]);
 restaurantsMarker.addTo(map);
-
-
+const hotelsMarker = buildMarker("hotels", [-76.521672, 41.906284])
+hotelsMarker.addTo(map);
 
 
 const markerDomEl = document.createElement("div"); // Create a new, detached DIV

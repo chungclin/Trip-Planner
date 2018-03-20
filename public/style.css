@@ -4,11 +4,43 @@
   
   body {
     margin: 0;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #C1B5AD;
+    font-family: "Garamond", Helvetica, Arial, sans-serif;
+    background-color: rgb(131, 167, 161);
   }
 
   #map {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
+    z-index: 1;
   }
+
+  header {
+    display: flex;
+    justify-content: flex-start;
+    z-index: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 70%; /* Full width */
+  }
+
+
+  .selection {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-grow: 1;
+    align-self: auto;;
+  }
+
+
+  /* .itinerary {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    flex-grow: 1;
+
+  } */
+
+ 

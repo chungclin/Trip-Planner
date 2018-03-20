@@ -7,6 +7,65 @@
     <script src="./bundle.js" defer></script>
   </head>
   <body>
-    <div id="map"></div>
+    
+    <header>
+      <h1>Trip Planner</h1>    
+    </header>
+
+   
+
+      <div class="selection">
+
+        <nav class="list flex-container">
+          <select>
+            <h2> <option value="hotel"> Hotels </option> </h2>
+          </select>
+          <select>
+            <h2> <option value="restaurant"> Restuarants </option> </h2>
+          </select>
+          <select>
+            <h2> <option value="things-to-do"> Things To Do </option> </h2> 
+          </select>
+          </nav>
+
+      
+      </div>
+
+      <br>
+
+      <div class='selection'>
+        <h2>My Itinerary</h2>
+        
+      <nav class="personal flex-container">
+
+          <div class="nav-item">
+            <h2> My Hotels </h2>
+            <li>
+              <ul>------</ul>
+            </li>
+            <button type='button'>X</button>
+          </div>
+          <div class='nav-item'>
+            <h2> My resturants </h2>
+            <li>
+                <ul>------</ul>
+              </li>
+              <button type='button'>X</button>
+          </div>
+          <div class="nav-item">
+            <h2> My Things to do </h2> 
+            <li>
+                <ul>------</ul>
+            </li>
+            <button type='button'>X</button>
+
+          </div>
+        </nav>
+      </div>
+
+      <div id="map">
+
+        </div>
+
   </body>
 </html>
